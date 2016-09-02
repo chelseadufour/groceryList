@@ -3,39 +3,61 @@
   <head>
     <meta charset="utf-8">
 	<title>Grocery list</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-  </head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="jquery-3.0.0.min.js"></script>
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
 
 <body>
+  <div class="row">
+    <div class="col-md-12">
+    <div class="headerContainer">
+	     <h1>Shopping List Program</h1>
+     </div>
+   </div>
+ </div>
 
-<div class="headerContainer">
-	<h1>Shopping List Program</h1>
-</div>
+<div class="row">
+  <div clas="col-md-12">
+    <div class="form">
+      	<form method="get" action="#" id="list">
+      		<label for="food">Food Item:</label>
+      		<input id="foodInput" type="text" name="food" size="12" maxlength="20" />
+      		<label for="price">Price:</label>
+      		<input id="priceInput" type="text" name="price" size="6" maxlength="6" />
+      		<button onclick="radFunction(); return false" name="addToList">Add to List</button>
+      	</form>
+      </div>
+    </div>
+</div> <!--div class="row"-->
 
 
-
-<div class="form">
-	<form method="get" action="#" id="list">
-		<label for="food">Food Item:</label>
-		<input id="foodInput" type="text" name="food" size="12" maxlength="20" />
-		<label for="price">Price:</label>
-		<input id="priceInput" type="text" name="price" size="6" maxlength="6" />
-		<button onclick="radFunction(); return false" name="addToList">Add to List</button>
-	</form>
-</div>
-
-<div class="pretty">
-	<ul id="prettyList"></ul>
-</div>
-
-<div class="pretty2">
-	<ul id="prettyList2"></ul>
-</div>
-
-<div class="total">
-	<p id="totalSpot"></p>
-</div>
+<div class="row">
+  <div class="col-md-4"><p>Food Item</p>
+    <div class="pretty">
+    	<ul id="prettyList"></ul>
+    </div>
+  </div>
+  <div class="col-md-4"><p>Food Price</p>
+    <div class="pretty2">
+    	<ul id="prettyList2"></ul>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="total">
+    	<p id="totalSpot"></p>
+    </div>
+  </div>
+</div><!--div class='row'-->
 
 
 
